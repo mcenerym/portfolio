@@ -25,7 +25,11 @@ export default function App() {
 				<div className='flex place-items-center'>
 					<div className='flex'>
 						<div className='w-80 h-80 relative overflow-hidden rounded-full'>
-							<img className='max-w-80' src={profile} />
+							<img
+								className='scale-110 ml-[-12px] mt-2'
+								src={profile}
+								alt='profile'
+							/>
 						</div>
 						<div className='ml-8 text-white'>
 							<label className='text-5xl'>Mike McEnery</label>
