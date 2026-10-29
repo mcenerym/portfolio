@@ -1,0 +1,124 @@
+/* Secondary views share the same compact, viewport-sized frame as Schedule. */
+.aster-secondary-view{height:100dvh;min-height:0;display:flex;flex-direction:column;overflow:hidden}
+.aster-secondary-view>.aster-demo-strip{flex-shrink:0}
+.aster-secondary-view .aster-shell{display:flex;flex-direction:column;flex:1;min-height:0}
+.aster-secondary-view .aster-appbar{flex-shrink:0}
+.aster-secondary-view .aster-content{display:flex;flex-direction:column;flex:1;min-height:0}
+.aster-secondary-view .aster-main{display:flex;flex-direction:column;flex:1;min-height:0;width:100%;max-width:none;padding:10px 16px 8px}
+.aster-secondary-view .aster-bottom{display:none}
+.aster-secondary-view .aster-alert{padding:7px 11px;margin:0 0 8px;font-size:12px;flex-shrink:0}
+.aster-people-workspace,.aster-reminder-workspace{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden;border:1px solid var(--aster-line);border-radius:9px;background:var(--aster-surface)}
+.aster-secondary-toolbar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:11px 16px;border-bottom:1px solid var(--aster-line);flex-shrink:0;min-height:59px}
+.aster-secondary-toolbar>div{display:flex;align-items:center;gap:15px;min-width:0}
+.aster-app .aster-secondary-toolbar h1{font-family:Georgia,serif;font-weight:400;font-size:25px;letter-spacing:-.6px;line-height:1.3;margin:0}
+.aster-secondary-toolbar>div>span,.aster-reminder-count{font-size:12px;color:var(--aster-text-muted);white-space:nowrap}
+.aster-directory-search{width:360px;max-width:50%}
+.aster-app .aster-directory-search input{font-size:14px;padding:7px 11px;min-height:36px;border-radius:6px}
+.aster-people-scroll{flex:1;min-height:0;overflow:auto;scrollbar-gutter:stable}
+.aster-people-scroll:focus-visible,.aster-reminder-preview-scroll:focus-visible,.aster-reminder-activity-scroll:focus-visible{outline:2px solid var(--aster-focus);outline-offset:-3px}
+.aster-people-table{width:100%;min-width:690px;border-collapse:collapse;text-align:left;font-size:14px}
+.aster-people-table thead th{position:sticky;top:0;z-index:1;background:var(--aster-surface-muted);padding:9px 18px;font-size:12px;font-weight:500;color:var(--aster-text-muted);border-bottom:1px solid var(--aster-line)}
+.aster-people-table td,.aster-people-table tbody th{border-bottom:1px solid var(--aster-line);padding:11px 18px;font-weight:400;color:var(--aster-text-muted);line-height:1.5}
+.aster-people-table tbody tr:hover{background:var(--aster-surface-muted)}
+.aster-people-table td:last-child{text-align:right;width:130px}
+.aster-people-table .aster-secondary-button{min-height:34px;font-size:12px;padding:6px 11px;white-space:nowrap;border-radius:5px}
+.aster-people-empty{padding:30px;text-align:center;color:var(--aster-text-muted);font-size:14px}
+.aster-people-empty button{margin-top:15px}
+.aster-reminder-columns{display:grid;grid-template-columns:300px minmax(280px,1fr) minmax(260px,.8fr);flex:1;min-height:0;overflow:hidden}
+.aster-reminder-pane{min-height:0;min-width:0;display:flex;flex-direction:column;border-right:1px solid var(--aster-line)}
+.aster-reminder-pane:last-child{border-right:0}
+.aster-reminder-pane-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:11px 15px;background:var(--aster-surface-muted);border-bottom:1px solid var(--aster-line);flex-shrink:0;min-height:46px}
+.aster-app .aster-reminder-pane-heading h2{font-family:'DM Sans',sans-serif;font-size:15px;font-weight:500;letter-spacing:0;line-height:1.4;margin:0;color:var(--aster-text-muted)}
+.aster-reminder-pane-heading>span{font-size:12px;color:var(--aster-text-muted)}
+.aster-reminder-compose-body{padding:17px 15px;overflow:auto;flex:1;min-height:0}
+.aster-reminder-compose-body>label,.aster-channel-label{display:block;font-size:12px;color:var(--aster-text-muted);margin-bottom:7px}
+.aster-app .aster-reminder-compose-body select{font-size:13px;padding:9px 10px;min-height:38px;border-radius:6px}
+.aster-channel-label{margin-top:20px}
+.aster-compact-channel{display:flex;gap:8px}
+.aster-compact-channel button{flex:1;font-size:12px;min-height:39px;line-height:1.5;padding:7px 8px;border:1px solid var(--aster-line-strong);color:var(--aster-text-muted);background:var(--aster-surface);border-radius:6px}
+.aster-compact-channel button[aria-pressed=true]{background:var(--aster-brand-soft);color:var(--aster-brand);border-color:var(--aster-brand)}
+.aster-mock-notice{background:var(--aster-surface-muted);border:1px solid var(--aster-line);border-radius:6px;padding:11px 12px;margin:18px 0}
+.aster-mock-notice strong{font-size:12px;font-weight:500;color:var(--aster-text-muted)}
+.aster-mock-notice p{font-size:12px;line-height:1.7;margin-top:5px;color:var(--aster-text-muted)}
+.aster-reminder-compose-body>.aster-primary-button{width:100%;font-size:13px;min-height:40px;padding:9px 11px;border-radius:6px}
+.aster-reminder-help{font-size:12px;line-height:1.7;color:var(--aster-text-muted);margin-top:12px}
+.aster-reminder-preview-button,.aster-reminder-pane-switch,.aster-reminder-mobile-actions{display:none}
+.aster-reminder-preview-scroll,.aster-reminder-activity-scroll{flex:1;min-height:0;overflow:auto;scrollbar-gutter:stable}
+.aster-not-sent{background:var(--aster-brand-soft);color:var(--aster-text-muted)!important;border-radius:4px;padding:3px 6px;font-size:12px!important;text-transform:uppercase;letter-spacing:.4px}
+.aster-compact-address{margin:0;padding:0 17px;border-bottom:1px solid var(--aster-line)}
+.aster-compact-address>div{display:flex;gap:12px;padding:12px 0;align-items:start;border-bottom:1px solid var(--aster-line)}
+.aster-compact-address>div:last-child{border:0}
+.aster-compact-address dt{font-size:12px;color:var(--aster-text-muted);min-width:40px}
+.aster-compact-address dd{font-size:13px;color:var(--aster-text-muted);margin:0;overflow-wrap:anywhere;line-height:1.7}
+.aster-compact-message{padding:20px}
+.aster-compact-message>span{font-family:Georgia,serif;font-size:25px;letter-spacing:-.6px;color:var(--aster-text-muted);display:block;margin-bottom:15px}
+.aster-compact-message p{font-size:15px;line-height:1.85;color:var(--aster-text-muted);white-space:pre-wrap}
+.aster-compact-message small{display:block;font-size:12px;line-height:1.6;color:var(--aster-text-muted);border-top:1px solid var(--aster-line);padding-top:11px;margin-top:20px}
+.aster-compact-message.is-text p{border-radius:12px 12px 12px 2px;background:var(--aster-brand-soft);padding:16px;font-size:14px}
+.aster-reminder-empty{text-align:center;padding:30px 20px;color:var(--aster-text-muted)}
+.aster-reminder-empty>span{font-size:30px;color:var(--aster-text-muted);display:block;margin-bottom:14px}
+.aster-reminder-empty h3{font-size:17px;font-weight:500;line-height:1.5;color:var(--aster-text-muted)}
+.aster-reminder-empty p{font-size:13px;line-height:1.8;color:var(--aster-text-muted);margin-top:12px}
+.aster-reminder-activity-scroll{padding:0 14px}
+.aster-compact-log{padding:14px 0;border-bottom:1px solid var(--aster-line)}
+.aster-compact-log:last-child{border:0}
+.aster-compact-log>div{display:flex;align-items:center;gap:7px}
+.aster-compact-log>div>span{color:var(--aster-text-muted);font-size:16px}
+.aster-compact-log h3{font-size:12px;font-weight:500;color:var(--aster-text-muted);margin:0;line-height:1.5}
+.aster-compact-log b{font-size:12px;font-weight:400;background:var(--aster-success-soft);color:var(--aster-success);border-radius:4px;padding:2px 5px;margin-left:auto;white-space:nowrap}
+.aster-compact-log>p{font-size:12px;color:var(--aster-text-muted);margin:6px 0 1px;overflow-wrap:anywhere;line-height:1.6}
+.aster-compact-log time{font-size:12px;color:var(--aster-text-muted);display:block}
+.aster-compact-log details{margin-top:7px}
+.aster-compact-log summary{cursor:pointer;font-size:12px;color:var(--aster-text-muted);min-height:26px;line-height:1.6}
+.aster-compact-log details p{font-size:12px;line-height:1.8;color:var(--aster-text-muted);margin-top:5px}
+@media(max-width:1100px){
+ .aster-reminder-columns{grid-template-columns:265px minmax(250px,1fr) minmax(230px,.8fr)}
+ .aster-people-table td,.aster-people-table tbody th{padding:11px 14px}
+ .aster-people-table thead th{padding:9px 14px}
+}
+@media(max-width:950px){
+ .aster-reminder-columns{display:block;position:relative;flex:1;min-height:0}
+ .aster-reminder-pane-switch{display:flex;gap:6px;padding:8px 12px;border-bottom:1px solid var(--aster-line);flex-shrink:0;background:var(--aster-surface-muted)}
+ .aster-reminder-pane-switch button{flex:1;border:1px solid var(--aster-line);background:var(--aster-surface);color:var(--aster-text-muted);border-radius:5px;min-height:36px;font-size:12px;padding:6px 9px}
+ .aster-reminder-pane-switch button[aria-pressed=true]{background:var(--aster-brand-soft);border-color:var(--aster-line-strong);color:var(--aster-text-muted)}
+ .aster-reminder-pane{position:absolute;inset:0;border:0}
+ .aster-reminder-pane[data-active=false]{display:none}
+ .aster-reminder-compose-body{max-width:570px;width:100%;margin-inline:auto;padding:18px 20px}
+ .aster-reminder-compose-body>.aster-reminder-preview-button{display:block;width:100%;margin-bottom:10px;font-size:13px;min-height:40px;padding:9px 11px}
+ .aster-reminder-mobile-actions{display:flex;gap:10px;padding:0 20px 20px}
+ .aster-reminder-mobile-actions button{flex:1;font-size:13px;min-height:42px;padding:9px}
+ .aster-reminder-preview-scroll .aster-compact-message{max-width:650px}
+ .aster-reminder-activity-scroll{padding:0 20px}
+ .aster-compact-log{padding:15px 0}
+ .aster-compact-log h3{font-size:14px}
+ .aster-compact-log>p{font-size:13px}
+ .aster-compact-log time{font-size:12px}
+ .aster-compact-log summary{font-size:12px;min-height:32px}
+ .aster-compact-log b{font-size:12px}
+}
+@media(max-width:760px){
+ .aster-secondary-view .aster-main{padding:6px 7px}
+ .aster-secondary-toolbar{padding:10px 12px;gap:10px;flex-wrap:wrap}
+ .aster-secondary-toolbar>div{gap:12px}
+ .aster-app .aster-secondary-toolbar h1{font-size:20px}
+ .aster-secondary-toolbar>div>span,.aster-reminder-count{font-size:12px}
+ .aster-directory-search{max-width:none;width:100%}
+ .aster-app .aster-directory-search input{font-size:14px;min-height:36px}
+ .aster-people-table{min-width:650px;font-size:13px}
+ .aster-people-table td,.aster-people-table tbody th{padding:9px 12px}
+ .aster-people-table .aster-secondary-button{min-height:36px;font-size:12px}
+ .aster-reminder-pane-heading{padding:10px 14px;min-height:42px}
+ .aster-reminder-compose-body{padding:15px 16px}
+ .aster-mock-notice{margin:14px 0}
+ .aster-channel-label{margin-top:15px}
+ .aster-reminder-mobile-actions{padding:0 16px 16px}
+ .aster-reminder-workspace .aster-compact-footnote,.aster-people-workspace .aster-compact-footnote{font-size:12px;line-height:1.6}
+}
+@media(max-height:550px){
+ .aster-secondary-view{height:auto;min-height:100dvh;overflow:visible}
+ .aster-people-workspace{flex-basis:auto;min-height:250px}
+ .aster-people-scroll{max-height:65dvh;min-height:180px;flex-basis:auto}
+ .aster-reminder-workspace{flex-basis:auto;min-height:400px}
+ .aster-reminder-columns{min-height:330px;flex-basis:auto}
+ .aster-reminder-compose-body,.aster-reminder-preview-scroll,.aster-reminder-activity-scroll{max-height:65dvh}
+}

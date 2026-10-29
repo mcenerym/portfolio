@@ -1,0 +1,128 @@
+/* Keep workspace chrome small and reserve viewport height for the calendar. */
+.aster-app .aster-demo-strip{padding:4px 20px;gap:8px;font-size:12px;min-height:24px;line-height:1.5}
+.aster-app .aster-demo-strip b{font-size:12px;margin-right:8px}
+.aster-app .aster-appbar{padding:9px 20px;gap:20px;min-height:58px}
+.aster-app .aster-appbar .aster-brand{gap:7px}
+.aster-app .aster-appbar .aster-brand>span{font-size:30px}
+.aster-app .aster-appbar .aster-brand>div{font-size:27px}
+.aster-app .aster-appbar .aster-brand small{display:none}
+.aster-app .aster-appbar .aster-navigation{gap:5px}
+.aster-app .aster-appbar .aster-navigation button{min-height:36px;padding:6px 15px;font-size:13px;gap:8px}
+.aster-app .aster-appbar .aster-navigation button>span{font-size:16px}
+.aster-app .aster-appbar-actions button{min-height:34px;padding:6px 11px;font-size:12px}
+.aster-app .aster-appbar-actions>span{font-size:12px}
+.aster-calendar-view{height:100dvh;min-height:0;display:flex;flex-direction:column;overflow:hidden}
+.aster-calendar-view>.aster-demo-strip{flex-shrink:0}
+.aster-calendar-view .aster-shell{flex:1;min-height:0;display:flex;flex-direction:column}
+.aster-calendar-view .aster-appbar{flex-shrink:0}
+.aster-calendar-view .aster-content{display:flex;flex-direction:column;flex:1;min-height:0}
+.aster-calendar-view .aster-main{display:flex;flex-direction:column;flex:1;min-height:0;width:100%;max-width:none;padding:10px 16px 8px}
+.aster-calendar-view .aster-bottom{display:none}
+.aster-calendar-view .aster-alert{padding:7px 11px;margin:0 0 8px;font-size:12px;flex-shrink:0}
+.aster-compact-workspace{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden;background:var(--aster-surface);border:1px solid var(--aster-line);border-radius:9px}
+.aster-compact-titlebar{display:flex;align-items:center;gap:16px;padding:11px 15px;flex-shrink:0;flex-wrap:wrap}
+.aster-compact-title{display:flex;align-items:center;gap:15px;flex:1;min-width:200px}
+.aster-app .aster-compact-title h1{font-family:Georgia,serif;font-weight:400;font-size:25px;letter-spacing:-.6px;line-height:1.3;margin:0}
+.aster-compact-title>span{font-size:14px;color:var(--aster-text-muted);white-space:nowrap}
+.aster-compact-titlebar>.aster-primary-button{display:inline-flex;align-items:center;gap:6px;font-size:13px;min-height:36px;padding:7px 12px;line-height:1.5;border-radius:6px}
+.aster-compact-filterbar{display:flex;align-items:center;gap:18px;padding:8px 15px;background:var(--aster-surface-muted);border-block:1px solid var(--aster-line);flex-shrink:0;flex-wrap:wrap}
+.aster-compact-provider{display:flex;align-items:center;gap:8px;min-width:0}
+.aster-compact-provider>span{font-size:12px;color:var(--aster-text-muted);white-space:nowrap}
+.aster-app .aster-compact-provider select{width:165px;min-height:33px;font-size:12px;padding:5px 8px;border-radius:5px}
+.aster-compact-stats{margin-left:auto;display:flex;gap:13px;flex-wrap:wrap;font-size:12px;line-height:1.5;color:var(--aster-text-muted)}
+.aster-compact-stats strong{font-size:12px;font-weight:500;color:var(--aster-text-muted)}
+.aster-calendar-view .aster-week-scroll{flex:1;min-height:0;overflow:auto;scrollbar-gutter:stable;position:relative}
+.aster-calendar-view .aster-week-calendar{min-height:100%;grid-template-columns:repeat(5,minmax(180px,1fr));min-width:900px;align-items:stretch}
+.aster-calendar-view .aster-calendar-day{min-height:0}
+.aster-calendar-view .aster-column-heading{position:sticky;top:0;z-index:2;padding:8px 12px;min-height:60px;background:var(--aster-surface-muted);box-shadow:0 1px var(--aster-line)}
+.aster-calendar-view .aster-column-heading>span{font-size:12px;letter-spacing:.6px}
+.aster-calendar-view .aster-column-heading>div{margin:2px 0 0}
+.aster-calendar-view .aster-column-heading strong{font-size:23px;line-height:1.2}
+.aster-calendar-view .aster-column-heading small{font-size:12px}
+.aster-calendar-view .aster-calendar-day.is-today .aster-column-heading{background:var(--aster-brand-soft);box-shadow:inset 0 3px var(--aster-brand),0 1px var(--aster-line)}
+.aster-calendar-view .aster-column-appointments{padding:6px;gap:6px}
+.aster-calendar-view .aster-week-visit{padding:7px 9px;border-radius:5px}
+.aster-calendar-view .aster-week-visit-time strong{font-size:13px;line-height:1.3}
+.aster-calendar-view .aster-week-visit-time span{font-size:12px;line-height:1.3}
+.aster-calendar-view .aster-week-visit h3{font-size:15px;line-height:1.3;margin:4px 0 1px}
+.aster-calendar-view .aster-week-provider{font-size:12px;line-height:1.3}
+.aster-calendar-view .aster-week-visit>p{font-size:12px;line-height:1.35;margin:3px 0 2px}
+.aster-calendar-view .aster-week-visit-actions{margin-top:2px;gap:5px}
+.aster-calendar-view .aster-week-visit-actions button{font-size:12px;padding:4px 6px;min-height:32px;line-height:1.3}
+.aster-calendar-view .aster-status-pill{font-size:12px;padding:1px 7px}
+.aster-calendar-view .aster-column-empty{padding:22px 8px}
+.aster-calendar-view .aster-column-empty>span{font-size:22px;margin:0 0 5px}
+.aster-calendar-view .aster-column-empty p{font-size:12px}
+.aster-calendar-view .aster-add-day{min-height:31px;font-size:12px;padding:5px;margin:5px 6px 7px}
+.aster-compact-footnote{font-size:12px;color:var(--aster-text-muted);padding:5px 12px;border-top:1px solid var(--aster-line);flex-shrink:0;line-height:1.5}
+@media(max-width:1100px){
+ .aster-compact-filterbar{gap:8px 15px}
+ .aster-compact-stats{margin-left:0}
+ .aster-compact-titlebar{gap:10px}
+ .aster-compact-title{flex:1;min-width:240px}
+ .aster-app .aster-appbar{flex-wrap:nowrap}
+ .aster-app .aster-appbar-actions>span{display:none}
+ .aster-app .aster-appbar .aster-navigation button{padding:6px 11px}
+}
+@media(max-width:760px){
+ .aster-app .aster-demo-strip{padding:4px 12px;font-size:12px;gap:4px}
+ .aster-app .aster-demo-strip b{font-size:12px;margin-right:5px}
+ .aster-app .aster-appbar{padding:8px 12px;gap:10px;flex-wrap:wrap}
+ .aster-app .aster-appbar .aster-brand{order:0}
+ .aster-app .aster-appbar .aster-brand>span{font-size:25px}
+ .aster-app .aster-appbar .aster-brand>div{font-size:24px}
+ .aster-app .aster-appbar-actions{order:1}
+ .aster-app .aster-appbar .aster-navigation{width:100%;order:2;gap:5px}
+ .aster-app .aster-appbar .aster-navigation button{font-size:12px;min-height:34px;padding:5px 10px;flex:1}
+ .aster-calendar-view .aster-main{padding:6px 7px}
+ .aster-compact-titlebar{padding:9px 10px;gap:9px}
+ .aster-compact-title{width:100%;flex-basis:100%;min-width:0;justify-content:space-between;gap:10px}
+ .aster-app .aster-compact-title h1{font-size:20px}
+ .aster-compact-title>span{font-size:12px}
+ .aster-compact-titlebar>.aster-primary-button{font-size:12px;min-height:36px;padding:7px 9px}
+ .aster-compact-filterbar{padding:8px 10px;gap:9px}
+ .aster-compact-provider{flex:1;gap:7px}
+ .aster-app .aster-compact-provider select{width:100%;font-size:13px;min-height:36px}
+ .aster-compact-stats{font-size:12px;gap:7px}
+ .aster-compact-stats>span:last-child{display:none}
+ .aster-calendar-view .aster-week-calendar{grid-template-columns:repeat(5,minmax(180px,1fr));min-width:900px}
+ .aster-calendar-view .aster-add-day{min-height:36px;font-size:12px}
+ .aster-compact-footnote{font-size:12px;padding:4px 10px}
+}
+@media(max-height:550px){
+ .aster-calendar-view{height:auto;min-height:100dvh;overflow:visible}
+ .aster-calendar-view .aster-week-scroll{max-height:70dvh;flex-basis:auto;min-height:180px}
+ .aster-compact-workspace{flex-basis:auto}
+}
+.aster-brand-group{display:flex;align-items:center;gap:14px;min-width:0}
+@media(max-width:760px){
+ .aster-brand-group{order:0;gap:10px;flex:1}
+}
+/* One week control: step back, the range (opens the date picker), step forward, Today. */
+.aster-week-switcher{position:relative;display:flex;align-items:center;gap:4px}
+.aster-week-switcher button{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:1px solid var(--aster-line-strong);background:var(--aster-surface);color:var(--aster-ink);border-radius:6px;min-height:36px;font-size:13px;line-height:1.4}
+.aster-week-switcher button:hover:not(:disabled){background:var(--aster-brand-soft)}
+.aster-week-switcher .aster-week-step{width:36px;padding:0;color:var(--aster-brand)}
+.aster-week-label{padding:6px 12px;font-weight:500;min-width:170px}
+.aster-week-label .aster-icon{color:var(--aster-brand)}
+.aster-week-today{padding:6px 12px;margin-left:4px}
+.aster-app .aster-week-picker{position:absolute;left:40px;bottom:0;width:1px;height:1px;min-height:0;padding:0;border:0;opacity:0;pointer-events:none}
+.aster-app .aster-week-picker.is-visible{position:static;width:150px;height:36px;min-height:36px;padding:4px 8px;border:1px solid var(--aster-line-strong);opacity:1;pointer-events:auto;font-size:13px}
+.aster-week-picker.is-visible+.aster-week-step,.aster-week-switcher:has(.aster-week-picker.is-visible) .aster-week-label{display:none}
+/* Provider chips double as the color legend; the select takes over on narrower screens. */
+.aster-provider-chips{display:flex;gap:6px;flex-wrap:wrap}
+.aster-provider-chips button{display:inline-flex;align-items:center;border:1px solid var(--aster-line-strong);background:var(--aster-surface);color:var(--aster-ink);border-radius:20px;padding:4px 12px;font-size:13px;min-height:32px}
+.aster-provider-chips button:hover{background:var(--aster-brand-soft)}
+.aster-provider-chips button[aria-pressed=true]{background:var(--aster-brand);border-color:var(--aster-brand);color:var(--aster-on-brand)}
+.aster-provider-chips button[aria-pressed=true] .aster-provider-dot{box-shadow:0 0 0 2px var(--aster-on-brand)}
+.aster-compact-provider{display:none}
+.aster-compact-stats strong{color:var(--aster-ink)}
+@media(max-width:1100px){
+ .aster-provider-chips{display:none}
+ .aster-compact-provider{display:flex}
+}
+@media(max-width:760px){
+ .aster-week-switcher{flex:1;flex-wrap:nowrap}
+ .aster-week-label{flex:1;min-width:0;padding:6px 8px}
+ .aster-week-label span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+}

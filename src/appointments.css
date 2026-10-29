@@ -1,0 +1,128 @@
+/* Color tokens. Every Aster stylesheet uses these. Light theme only. */
+.aster-app{--aster-bg:#f4f0f7;--aster-surface:#ffffff;--aster-surface-muted:#f1ebf5;--aster-line:#ddd0e4;--aster-line-strong:#a08aac;--aster-decor:#d5c4df;--aster-ink:#2f2735;--aster-text-muted:#5f5068;--aster-text-subtle:#6f6079;--aster-brand:#6d4878;--aster-brand-hover:#5a3a64;--aster-brand-soft:#e9dcf1;--aster-on-brand:#ffffff;--aster-focus:#8a5fa0;--aster-success:#2f6b46;--aster-success-soft:#e8f3ec;--aster-warning:#80520f;--aster-warning-soft:#fbf1df;--aster-danger:#a3324f;--aster-danger-soft:#fcebef;--aster-ellis:#8a5fa0;--aster-ellis-soft:#f2e8f9;--aster-lee:#3a8463;--aster-lee-soft:#e3f2e9;--aster-blake:#b0602a;--aster-blake-soft:#fcebdc;--aster-shadow:#35213c1f;--aster-past:#f3f1f4;color-scheme:light}
+.aster-app{font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.6;background:var(--aster-bg);color:var(--aster-ink);min-height:100vh;font-variant-numeric:tabular-nums}
+.aster-app *{box-sizing:border-box}
+.aster-app button,.aster-app input,.aster-app select{font:inherit}
+.aster-app button{cursor:pointer}
+.aster-app button:disabled{opacity:.45;cursor:not-allowed}
+.aster-app input,.aster-app select{background:var(--aster-surface);border:1px solid var(--aster-line-strong);border-radius:8px;min-height:45px;padding:11px 12px;color:var(--aster-ink);font-size:16px;line-height:1.5;width:100%;min-width:0}
+.aster-app button:focus-visible,.aster-app input:focus-visible,.aster-app select:focus-visible,.aster-app a:focus-visible,.aster-app summary:focus-visible{outline:3px solid var(--aster-focus);outline-offset:3px}
+.aster-app button,.aster-app a{transition:background .15s,color .15s}
+.aster-demo-strip{background:var(--aster-brand-soft);color:var(--aster-brand);display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap;padding:10px 30px;font-size:14px;border-bottom:1px solid var(--aster-line-strong)}
+.aster-demo-strip b{letter-spacing:1px;font-size:12px;margin-right:12px}
+.aster-demo-strip a{text-decoration:underline;text-underline-offset:3px}
+.aster-shell{display:grid;grid-template-columns:240px minmax(0,1fr);min-height:calc(100vh - 40px)}
+.aster-brand{display:flex;align-items:center;gap:11px;color:var(--aster-brand);width:max-content}
+.aster-brand>span{font-size:46px;line-height:1}
+.aster-brand>div{font-family:Georgia,serif;font-size:38px;letter-spacing:-1.5px;line-height:1}
+.aster-brand small{display:block;font-family:'DM Sans',sans-serif;letter-spacing:1.5px;font-size:12px;margin-top:10px;font-weight:500}
+.aster-navigation{display:flex;flex-direction:column;gap:7px}
+.aster-navigation button{background:transparent;border:0;border-radius:8px;display:flex;align-items:center;gap:12px;padding:13px 14px;font-size:16px;color:var(--aster-text-muted);min-height:48px;text-align:left}
+.aster-navigation button.active{background:var(--aster-brand-soft);color:var(--aster-brand);font-weight:500}
+.aster-navigation button:hover{background:var(--aster-brand-soft)}
+.aster-navigation .aster-icon{flex-shrink:0}
+.aster-navigation small{margin-left:auto;font-size:13px;background:var(--aster-surface-muted);border-radius:4px;min-width:22px;text-align:center}
+.aster-content{min-width:0}
+.aster-main{padding:34px 35px 0;max-width:1700px;margin:auto}
+.aster-app h1{font-family:Georgia,serif;font-size:clamp(32px,3vw,45px);font-weight:400;letter-spacing:-1.5px;line-height:1.2;margin:13px 0 15px}
+.aster-alert{font-size:16px;color:var(--aster-warning);background:var(--aster-warning-soft);padding:14px 18px;border-radius:8px;margin-bottom:18px}
+.aster-booking{border:1px solid var(--aster-line);border-radius:12px;background:var(--aster-surface);min-width:0;overflow:hidden}
+.aster-app h2{font-family:Georgia,serif;line-height:1.3;font-size:26px;font-weight:400;letter-spacing:-.6px}
+.aster-avatar{height:36px;width:36px;display:grid;place-items:center;border-radius:50%;font-size:14px;flex-shrink:0;font-weight:500;background:var(--aster-brand-soft);color:var(--aster-text-muted)}
+.aster-rose{background:var(--aster-danger-soft);color:var(--aster-danger)}
+.aster-mint{background:var(--aster-success-soft);color:var(--aster-success)}
+.aster-peach{background:var(--aster-warning-soft);color:var(--aster-warning)}
+.aster-status-pill{display:inline-block;border-radius:15px;padding:3px 9px;font-size:12px;color:var(--aster-success);background:var(--aster-success-soft);line-height:1.8;white-space:nowrap}
+.aster-status-pill.is-canceled{background:var(--aster-surface-muted);color:var(--aster-text-muted);border:1px solid var(--aster-line)}
+.aster-booking form{padding:0 23px 22px}
+.aster-booking fieldset{border:0;border-bottom:1px solid var(--aster-line);padding:21px 0 23px;margin:0;min-width:0}
+.aster-booking fieldset:last-of-type{border:0}
+.aster-booking legend{font-size:15px;font-weight:500;float:left;width:100%;padding:0 0 14px;display:flex;align-items:center;gap:9px}
+.aster-booking legend+*{clear:both}
+.aster-booking legend>b{display:grid;place-items:center;width:22px;height:22px;background:var(--aster-brand-soft);color:var(--aster-brand);font-size:13px;font-weight:500;border-radius:50%}
+.aster-procedure-list{display:flex;flex-direction:column;gap:7px}
+.aster-procedure-list label{display:flex;align-items:center;gap:9px;padding:10px;border:1px solid var(--aster-line);border-radius:7px;cursor:pointer;background:var(--aster-surface)}
+.aster-procedure-list label.checked{border-color:var(--aster-line-strong);background:var(--aster-surface-muted)}
+.aster-procedure-list input[type=checkbox]{width:15px;height:15px;min-height:0;padding:0;accent-color:var(--aster-brand);flex-shrink:0}
+.aster-procedure-list label>span{font-size:13px;line-height:1.5}
+.aster-procedure-list small{display:block;font-size:12px;color:var(--aster-text-muted);margin-top:2px}
+.aster-procedure-list b{margin-left:auto;font-size:12px;font-weight:400;color:var(--aster-text-muted);white-space:nowrap}
+.aster-duration{display:flex;justify-content:space-between;gap:15px;background:var(--aster-surface-muted);padding:11px 12px;border-radius:6px;margin-top:12px;font-size:12px;color:var(--aster-text-muted)}
+.aster-duration strong{font-weight:500;color:var(--aster-ink)}
+.aster-booking fieldset>label:not(.aster-sr-only){font-size:13px;display:block;color:var(--aster-text-muted);margin-bottom:7px}
+.aster-primary-button,.aster-secondary-button{font-size:15px;line-height:1.6;min-height:46px;padding:12px 15px;border-radius:7px;font-weight:500}
+.aster-primary-button{background:var(--aster-brand);color:var(--aster-on-brand);border:1px solid var(--aster-brand)}
+.aster-primary-button:hover:not(:disabled){background:var(--aster-brand-hover)}
+.aster-secondary-button{background:var(--aster-surface);color:var(--aster-brand);border:1px solid var(--aster-line-strong)}
+.aster-secondary-button:hover:not(:disabled){background:var(--aster-surface-muted)}
+.aster-booking .aster-primary-button{width:100%;font-size:14px}
+.aster-form-error{font-size:14px;color:var(--aster-danger);background:var(--aster-danger-soft);padding:12px;border-radius:6px;margin-bottom:14px;line-height:1.8}
+.aster-bottom{display:flex;justify-content:space-between;gap:20px;padding:25px 0;margin-top:35px;border-top:1px solid var(--aster-line);color:var(--aster-text-muted);font-size:12px}
+.aster-bottom>span{font-size:12px;letter-spacing:1px}
+.aster-bottom a{color:var(--aster-text-muted);text-decoration:underline;text-underline-offset:3px}
+.aster-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+/* Keep the calm palette readable: content text is darker than decorative accents. */
+.aster-app .aster-procedure-list small{color:var(--aster-text-muted)}
+.aster-app .aster-procedure-list label>span{font-size:15px}
+.aster-app .aster-procedure-list small{font-size:13px}
+.aster-app .aster-procedure-list b{font-size:14px;color:var(--aster-text-muted)}
+.aster-app .aster-status-pill{font-size:13px}
+.aster-app .aster-procedure-list input[type=checkbox]{width:17px;height:17px}
+@media(max-width:1250px){
+ .aster-shell{grid-template-columns:200px minmax(0,1fr)}
+ .aster-main{padding:30px 23px 0}
+ .aster-booking form{padding-inline:19px}
+}
+@media(max-width:1000px){
+ .aster-shell{display:block}
+ .aster-brand>span{font-size:40px}
+ .aster-brand>div{font-size:33px}
+ .aster-brand small{font-size:12px}
+ .aster-navigation{flex-direction:row;gap:8px}
+ .aster-navigation button{padding:10px 14px;font-size:15px;gap:8px}
+ .aster-navigation button>span{font-size:17px}
+ .aster-navigation small{display:none}
+}
+@media(max-width:760px){
+ .aster-demo-strip{padding:10px 18px;font-size:13px;gap:6px}
+ .aster-demo-strip b{font-size:12px;margin-right:7px}
+ .aster-brand{margin-bottom:22px}
+ .aster-navigation{gap:6px}
+ .aster-navigation button{flex:1;justify-content:center;padding:11px 7px;gap:7px;font-size:14px}
+ .aster-main{padding:26px 18px 0}
+ .aster-app h1{font-size:35px;letter-spacing:-1px;margin:14px 0}
+ .aster-booking form{padding:0 20px 23px}
+ .aster-booking legend{font-size:16px}
+ .aster-booking input,.aster-booking select{font-size:16px}
+ .aster-app .aster-procedure-list label>span{font-size:16px}
+ .aster-app .aster-procedure-list small{font-size:14px}
+ .aster-app .aster-procedure-list b{font-size:15px}
+ .aster-procedure-list label{padding:12px}
+ .aster-duration{font-size:15px;padding:13px}
+ .aster-booking .aster-primary-button{font-size:16px;min-height:50px}
+ .aster-booking fieldset>label:not(.aster-sr-only){font-size:15px}
+ .aster-bottom{display:block;line-height:2.2;font-size:13px;padding:22px 0;margin-top:28px}
+ .aster-bottom>span{display:block;font-size:12px;letter-spacing:.5px}
+ .aster-app .aster-form-error{font-size:16px}
+}
+/* Status messages float as a toast so they never push the workspace down. */
+.aster-toast{position:fixed;right:20px;bottom:20px;z-index:20;display:flex;align-items:center;gap:6px;max-width:min(440px,calc(100vw - 32px));padding:10px 10px 10px 16px;border-radius:10px;background:var(--aster-ink);color:var(--aster-bg);box-shadow:0 10px 30px var(--aster-shadow);transform:translateY(12px);opacity:0;pointer-events:none;transition:opacity .2s,transform .2s}
+.aster-toast.is-visible{transform:none;opacity:1;pointer-events:auto}
+.aster-app .aster-announcement{margin:0;font-size:14px;line-height:1.5;flex:1}
+.aster-toast button{flex-shrink:0;display:grid;place-items:center;border:0;border-radius:6px;background:none;color:inherit;min-height:34px;min-width:34px;font-size:14px}
+.aster-toast .aster-toast-undo{padding:0 10px;font-weight:600;color:var(--aster-brand-soft);text-decoration:underline;text-underline-offset:3px}
+.aster-toast button:hover{background:color-mix(in srgb,currentColor 14%,transparent)}
+.aster-app .aster-toast button:focus-visible{outline-color:var(--aster-brand-soft)}
+.aster-form-error::before{content:'⚠\00a0' / '';font-weight:600}
+.aster-icon{display:block;flex-shrink:0}
+.aster-navigation button{display:flex;align-items:center}
+@media(max-width:760px){
+ .aster-toast{left:16px;right:16px;bottom:16px;max-width:none}
+}
+/* Touch screens get 44px targets on the dense calendar controls. */
+@media(pointer:coarse){
+ .aster-app .aster-week-visit-actions button,.aster-app .aster-add-day,.aster-app .aster-empty-book,.aster-week-visit-confirm button,.aster-week-switcher button,.aster-provider-chips button{min-height:44px}
+}
+@media(prefers-reduced-motion:reduce){
+ .aster-toast{transition:none}
+}

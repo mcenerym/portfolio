@@ -1,0 +1,45 @@
+.hero{grid-template-columns:1.3fr 1fr;gap:4%}
+.hero h1{font-size:clamp(40px,4.1vw,61px);letter-spacing:-3px}
+.hero h1 em{letter-spacing:-2.9px}
+.hero-copy>p{max-width:480px}
+.service-grid{row-gap:0}
+.service:nth-child(3n){border-right:0}
+.service:nth-child(-n+3){border-bottom:1px solid var(--line)}
+.service:last-child{border:0}
+.ai-focus{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:17px}
+.ai-focus li{border-left:1px solid var(--deep-line);padding-left:13px}
+.ai-focus strong{display:block;font-size:14px;font-weight:500;color:var(--pale);margin-bottom:5px}
+.ai-focus span{display:block;font-size:14px;line-height:1.8;color:var(--pale)}
+.about{padding-bottom:50px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:8%;padding-top:9px}
+.about h3{font-size:24px;font-weight:500;letter-spacing:-.5px;margin-bottom:20px}
+.about-story p{font-size:16px;line-height:1.95;color:var(--muted);margin-bottom:17px}
+.about-story blockquote{font-family:Georgia,serif;font-size:23px;line-height:1.5;color:var(--accent);margin:27px 0 0;padding-left:20px;border-left:2px solid var(--line-strong)}
+.technical-background{padding:26px 30px;background:var(--panel);border:1px solid var(--line);border-radius:3px}
+.technical-background h3{font-size:18px;margin:0 0 20px}
+.technical-background dl{margin:0}
+.technical-background dl>div{padding:13px 0;border-top:1px solid var(--line)}
+.technical-background dt{font-size:14px;font-weight:600;margin-bottom:6px}
+.technical-background dd{font-size:14px;line-height:1.9;color:var(--muted);margin:0}
+.about .section-heading>p{max-width:385px}
+.approach{padding-top:50px}
+@media(max-width:1050px){
+ .hero h1{font-size:clamp(37px,4.3vw,49px);letter-spacing:-2.2px}
+ .hero h1 em{letter-spacing:-2.2px}
+ .hero-actions{flex-wrap:wrap}
+ .about-grid{gap:5%}
+ .about-story blockquote{font-size:24px}
+}
+@media(max-width:760px){
+ .hero{grid-template-columns:1fr}
+ .hero h1{font-size:clamp(35px,7.9vw,59px);letter-spacing:-1.8px}
+ .hero h1 em{letter-spacing:-2px}
+ .service:nth-child(n){border-right:0;border-bottom:1px solid var(--line)}
+ .service:last-child{border-bottom:0}
+ .about-grid{grid-template-columns:1fr;gap:30px}
+ .about{padding-bottom:35px}
+ .approach{padding-top:35px}
+ .about-story blockquote{font-size:22px}
+ .technical-background{padding:23px}
+ .ai-focus{gap:16px}
+}

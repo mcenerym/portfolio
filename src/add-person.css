@@ -1,0 +1,25 @@
+.aster-app .aster-appointment-modal.aster-add-person-modal{width:min(520px,calc(100vw - 24px));height:auto;max-height:calc(100dvh - 24px);overflow:auto}
+.aster-app .aster-people-workspace .aster-secondary-toolbar{gap:14px}
+.aster-app .aster-people-workspace .aster-directory-search{margin-left:auto;flex:1;max-width:360px}
+.aster-app .aster-add-person-button{font-size:13px;min-height:36px;padding:7px 12px;white-space:nowrap}
+.aster-add-person-form{display:flex;flex-direction:column;min-width:0}
+.aster-add-person-fields{padding:18px 24px 20px}
+.aster-add-person-fields>label{display:flex;align-items:center;justify-content:space-between;font-size:14px;color:var(--aster-brand);margin:0 0 6px}
+.aster-add-person-fields>label:not(:first-child){margin-top:15px}
+.aster-add-person-fields>label>span{font-size:12px;color:var(--aster-text-muted)}
+.aster-app .aster-add-person-fields>input{min-height:42px;font-size:15px;padding:9px 11px;border-radius:6px}
+.aster-add-person-fields>p{font-size:12px;line-height:1.6;color:var(--aster-text-muted);margin:12px 0 0}
+.aster-add-person-fields>.aster-form-error{color:var(--aster-danger);background:var(--aster-danger-soft);padding:9px 11px;border-radius:6px}
+.aster-add-person-footer{display:flex;gap:14px;align-items:center;justify-content:space-between;padding:14px 24px;border-top:1px solid var(--aster-line);background:var(--aster-surface-muted)}
+.aster-add-person-footer>span{font-size:12px;color:var(--aster-text-muted)}
+.aster-add-person-footer>div{display:flex;gap:9px;justify-content:flex-end;margin-left:auto}
+.aster-app .aster-add-person-footer button{font-size:13px;min-height:40px;padding:8px 13px;white-space:nowrap}
+@media(max-width:760px){
+ .aster-app .aster-people-workspace .aster-secondary-toolbar{flex-wrap:wrap}
+ .aster-app .aster-people-workspace .aster-directory-search{order:3;flex-basis:100%;max-width:none;width:100%}
+ .aster-app .aster-add-person-button{margin-left:auto}
+ .aster-add-person-fields{padding:16px 18px}
+ .aster-app .aster-add-person-fields>input{font-size:16px}
+ .aster-add-person-footer{padding:12px 18px;flex-wrap:wrap}
+ .aster-add-person-footer>span{flex-basis:100%}
+}

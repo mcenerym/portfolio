@@ -1,0 +1,76 @@
+/* A stable frame with column contents sized to the available room. */
+.aster-app .aster-appointment-modal{width:min(1180px,calc(100vw - 40px));height:min(650px,calc(100dvh - 32px));max-height:calc(100dvh - 32px)}
+.aster-app .aster-appointment-modal .aster-compact-booking{height:100%;max-height:100%;min-height:0}
+.aster-app .aster-appointment-modal .aster-compact-booking form{flex:1;min-height:0;align-items:stretch}
+.aster-app .aster-compact-booking .aster-booking-panels{grid-template-columns:minmax(0,.9fr) minmax(0,1fr) minmax(0,1.15fr);padding:0;min-height:0;overflow:hidden;align-items:stretch;scrollbar-gutter:auto}
+.aster-app .aster-appointment-modal .aster-compact-booking fieldset:nth-of-type(n){display:flex;flex-direction:column;padding:18px 20px;min-height:0;height:100%;overflow:hidden}
+.aster-app .aster-appointment-modal .aster-compact-booking legend{float:none;flex-shrink:0;font-size:15px;margin:0 0 13px;padding:0;line-height:1.5}
+.aster-app .aster-compact-booking .aster-booking-panel-content{display:flex;flex-direction:column;flex:1;min-height:0;min-width:0;overflow:auto;scrollbar-gutter:stable;padding:2px 3px 3px}
+.aster-booking-panel-content>input,.aster-booking-panel-content>.aster-picker-count,.aster-booking-panel-content>.aster-duration{flex-shrink:0}
+.aster-app .aster-compact-booking input:not([type=checkbox]):not([type=radio]),.aster-app .aster-compact-booking select{font-size:15px;min-height:42px;padding:10px;border-radius:6px;line-height:1.4}
+.aster-app .aster-compact-booking .aster-booking-people-scroll{height:auto;flex:1;min-height:100px;padding:3px 5px 3px 1px;scrollbar-gutter:stable}
+.aster-app .aster-compact-booking .aster-picker-count{font-size:12px;line-height:1.6;margin:9px 0}
+.aster-app .aster-compact-booking .aster-booking-person-card{padding:7px 10px;min-height:47px}
+.aster-app .aster-compact-booking .aster-picker-person-heading h3{font-size:14px}
+.aster-app .aster-compact-booking .aster-picker-person-heading>div>span{font-size:12px}
+.aster-app .aster-compact-booking .aster-procedure-list{display:grid;grid-template-rows:repeat(6,minmax(39px,1fr));gap:8px;flex:1;min-height:274px}
+.aster-app .aster-appointment-modal .aster-compact-booking .aster-procedure-list label{padding:10px;min-height:39px;gap:10px}
+.aster-app .aster-appointment-modal .aster-compact-booking .aster-procedure-list label>span{font-size:14px;line-height:1.45}
+.aster-app .aster-appointment-modal .aster-compact-booking .aster-procedure-list label>b{font-size:12px}
+.aster-app .aster-compact-booking .aster-duration{font-size:13px;padding:12px;margin-top:12px;line-height:1.5}
+.aster-app .aster-compact-booking .aster-availability-shortcuts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:0 0 13px;flex-shrink:0}
+.aster-app .aster-compact-booking .aster-availability-shortcuts button{min-height:48px;padding:8px 10px;font-size:12px;line-height:1.5;align-items:center}
+.aster-app .aster-compact-booking .aster-availability-shortcuts small{grid-column:1 / -1;font-size:12px;line-height:1.5}
+.aster-booking-time-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px 11px;flex-shrink:0}
+.aster-booking-control{display:flex;flex-direction:column;gap:6px;min-width:0}
+.aster-booking-control-wide{grid-column:1 / -1}
+.aster-booking-control>label{font-size:13px;line-height:1.5;color:var(--aster-text-muted)}
+.aster-app .aster-compact-booking .aster-booking-hint{font-size:12px;line-height:1.6;margin:10px 0 0;min-height:3.2em;flex-shrink:0}
+.aster-app .aster-compact-booking .aster-booking-selection{margin-top:auto;padding-top:15px;border-top:1px solid var(--aster-line);flex-shrink:0;gap:5px}
+.aster-booking-selection>span{font-size:15px;line-height:1.5}
+.aster-booking-selection>strong{font-size:12px;line-height:1.5}
+.aster-app .aster-compact-booking .aster-booking-footer{padding:12px 22px;width:100%;align-self:stretch}
+.aster-app .aster-appointment-modal .aster-compact-booking .aster-booking-footer button{min-height:42px;font-size:14px;padding:10px 15px}
+.aster-app .aster-compact-booking .aster-availability-feedback{font-size:12px;height:2.8em;min-height:2.8em;max-height:2.8em;margin-bottom:8px}
+@media(min-width:851px) and (max-width:1050px){
+ .aster-app .aster-appointment-modal .aster-compact-booking fieldset:nth-of-type(n){padding:16px 13px}
+ .aster-app .aster-compact-booking .aster-availability-shortcuts{grid-template-columns:1fr;gap:6px}
+ .aster-app .aster-compact-booking .aster-availability-shortcuts button{min-height:34px;padding:6px 9px}
+ .aster-app .aster-compact-booking .aster-availability-shortcuts small{grid-column:auto}
+ .aster-booking-time-fields{grid-template-columns:1fr;gap:10px}
+ .aster-app .aster-compact-booking .aster-booking-selection{margin-top:12px;padding-top:10px}
+ .aster-app .aster-compact-booking .aster-booking-hint{min-height:0}
+}
+@media(max-width:850px){
+ .aster-app .aster-appointment-modal{width:min(570px,calc(100vw - 20px));height:min(650px,calc(100dvh - 24px));max-height:calc(100dvh - 24px)}
+ .aster-app .aster-compact-booking .aster-booking-panels{display:block;position:relative;flex:1;min-height:0;overflow:hidden;padding:0}
+ .aster-app .aster-appointment-modal .aster-compact-booking fieldset:nth-of-type(n){position:absolute;inset:0;display:flex;height:100%;padding:16px 18px;overflow:hidden;border:0}
+ .aster-app .aster-appointment-modal .aster-compact-booking fieldset[data-active=false]{display:none}
+ .aster-app .aster-compact-booking .aster-booking-panel-content{padding:2px 3px 3px;min-height:0}
+ .aster-app .aster-compact-booking .aster-booking-people-scroll{height:auto;min-height:80px}
+ .aster-app .aster-compact-booking input:not([type=checkbox]):not([type=radio]),.aster-app .aster-compact-booking select{font-size:16px;min-height:42px}
+ .aster-app .aster-compact-booking .aster-procedure-list{min-height:265px;grid-template-rows:repeat(6,minmax(38px,1fr));gap:7px}
+ .aster-app .aster-compact-booking .aster-availability-shortcuts{gap:8px;margin-bottom:13px}
+ .aster-app .aster-compact-booking .aster-availability-shortcuts button{font-size:12px;min-height:46px}
+ .aster-booking-time-fields{gap:12px 10px}
+ .aster-booking-control>label{font-size:12px}
+ .aster-app .aster-compact-booking .aster-booking-selection{margin-top:12px;padding-top:12px}
+ .aster-app .aster-compact-booking .aster-booking-hint{min-height:0;font-size:12px}
+ .aster-app .aster-compact-booking .aster-booking-footer{padding:10px 15px}
+ .aster-app .aster-compact-booking .aster-availability-feedback{font-size:12px;height:4.2em;min-height:4.2em;max-height:4.2em}
+ .aster-app .aster-appointment-modal .aster-compact-booking .aster-booking-footer button{min-height:40px;padding:9px 12px;font-size:13px}
+}
+@media(max-height:600px){
+ .aster-app .aster-appointment-modal .aster-compact-booking fieldset:nth-of-type(n){padding:12px}
+ .aster-app .aster-compact-booking .aster-procedure-list{min-height:240px}
+ .aster-app .aster-compact-booking .aster-booking-panel-content{scrollbar-gutter:stable}
+ .aster-app .aster-compact-booking .aster-booking-selection{margin-top:10px}
+}
+.aster-app .aster-compact-booking .aster-booking-footer-controls{width:100%;justify-content:flex-end}
+.aster-booking-action-group{display:flex;align-items:center;justify-content:flex-end;gap:10px;margin-left:auto;flex-wrap:wrap}
+.aster-app .aster-compact-booking .aster-booking-action-group>button{margin:0}
+.aster-app .aster-compact-booking .aster-booking-action-group>button:first-of-type{margin-right:0}
+@media(max-width:850px){
+ .aster-booking-action-group{gap:8px;justify-content:flex-end;margin-left:auto}
+ .aster-app .aster-compact-booking .aster-booking-action-group>button{flex:none}
+}

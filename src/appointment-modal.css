@@ -1,0 +1,31 @@
+/* The daily schedule owns the workspace; booking opens only when requested. */
+.aster-appointment-modal{width:min(900px,calc(100vw - 36px));max-width:none;max-height:calc(100dvh - 48px);padding:0;border:0;border-radius:17px;background:var(--aster-surface);color:var(--aster-ink);box-shadow:0 25px 90px var(--aster-shadow);overflow-y:auto;overscroll-behavior:contain}
+.aster-appointment-modal::backdrop{background:#1b122280;backdrop-filter:blur(3px)}
+.aster-modal-close{position:absolute;top:18px;right:20px;z-index:1;border:1px solid var(--aster-line);background:var(--aster-surface-muted);color:var(--aster-brand);font-size:28px!important;line-height:1;width:42px;height:42px;border-radius:50%;display:grid;place-items:center}
+.aster-modal-close:hover{background:var(--aster-brand-soft)}
+.aster-appointment-modal .aster-booking{border:0;border-radius:0;background:var(--aster-surface);overflow:visible}
+.aster-appointment-modal .aster-booking form{padding:8px 32px 28px;display:grid;grid-template-columns:1fr 1fr;column-gap:30px;align-items:start}
+.aster-appointment-modal .aster-booking fieldset{float:none;padding-top:20px;min-width:0}
+.aster-appointment-modal .aster-booking fieldset:nth-of-type(1){grid-column:1;grid-row:1}
+.aster-appointment-modal .aster-booking fieldset:nth-of-type(2){grid-column:1;grid-row:2;border:0;padding-bottom:14px}
+.aster-appointment-modal .aster-booking fieldset:nth-of-type(3){grid-column:2;grid-row:1 / 3;border:0;border-left:1px solid var(--aster-line);padding-left:28px;min-height:100%}
+.aster-appointment-modal .aster-booking legend{float:none;width:auto;font-size:16px;padding:0;line-height:1.6;margin-bottom:15px}
+.aster-appointment-modal .aster-booking legend b{width:25px;height:25px;font-size:13px}
+.aster-appointment-modal .aster-booking fieldset>label:not(.aster-sr-only){margin-top:15px;font-size:14px;color:var(--aster-text-muted)}
+.aster-appointment-modal .aster-procedure-list label>span{font-size:14px}
+.aster-appointment-modal .aster-procedure-list small{font-size:12px}
+.aster-appointment-modal .aster-procedure-list b{font-size:13px}
+.aster-appointment-modal .aster-duration{font-size:13px}
+.aster-appointment-modal .aster-booking .aster-primary-button{width:auto;font-size:15px;min-width:220px}
+.aster-appointment-modal .aster-form-error{grid-column:1 / -1;margin-top:15px;font-size:14px}
+@media(max-width:760px){
+ .aster-appointment-modal{width:calc(100vw - 20px);max-height:calc(100dvh - 24px);border-radius:13px}
+ .aster-modal-close{top:17px;right:16px}
+ .aster-appointment-modal .aster-booking form{display:block;padding:4px 22px 25px}
+ .aster-appointment-modal .aster-booking fieldset:nth-of-type(3){border-left:0;border-top:1px solid var(--aster-line);padding-left:0;padding-top:23px;min-height:0}
+ .aster-appointment-modal .aster-booking .aster-primary-button{flex:2;min-width:180px}
+ .aster-appointment-modal .aster-booking legend{font-size:16px}
+}
+@media(prefers-reduced-motion:reduce){
+ .aster-appointment-modal::backdrop{backdrop-filter:none}
+}

@@ -1,0 +1,1 @@
+{"name":"mike-mcenery-developer","version":"1.0.0","private":true,"type":"module","scripts":{"dev":"vite --host 127.0.0.1","build":"vite build","preview":"vite preview --host 127.0.0.1","check":"node scripts/check-all.mjs"},"dependencies":{"react":"^18.3.1","react-dom":"^18.3.1"},"devDependencies":{"vite":"^6.0.0"}}

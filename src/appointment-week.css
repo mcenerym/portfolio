@@ -1,0 +1,110 @@
+/* Top navigation leaves the entire workspace available for the workweek. */
+.aster-app .aster-shell{display:block}
+.aster-appbar{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:23px 3%;background:var(--aster-surface);border-bottom:1px solid var(--aster-line)}
+.aster-appbar .aster-brand{flex-shrink:0}
+.aster-appbar .aster-brand>span{font-size:39px}
+.aster-appbar .aster-brand>div{font-size:33px}
+.aster-appbar .aster-brand small{font-size:12px;margin-top:8px}
+.aster-appbar .aster-navigation{display:flex;flex-direction:row;gap:8px}
+.aster-appbar .aster-navigation button{padding:12px 20px;font-size:15px;gap:10px;min-height:48px}
+.aster-appbar .aster-navigation small{font-size:12px;min-width:24px;margin-left:4px}
+.aster-appbar-actions{display:flex;align-items:center;gap:16px}
+.aster-appbar-actions>span{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--aster-text-muted)}
+.aster-appbar-actions i{width:6px;height:6px;background:var(--aster-brand);border-radius:50%}
+.aster-appbar-actions button{border:1px solid var(--aster-line-strong);background:var(--aster-surface);color:var(--aster-text-muted);padding:10px 15px;border-radius:7px;font-size:13px;min-height:44px}
+.aster-appbar-actions button:hover{background:var(--aster-surface-muted)}
+.aster-app .aster-main{max-width:1600px;padding:35px 3% 0}
+.aster-week-scroll{overflow-x:auto;overscroll-behavior-x:contain;scrollbar-color:var(--aster-line-strong) var(--aster-surface-muted)}
+.aster-week-scroll:focus-visible{outline:2px solid var(--aster-focus);outline-offset:-3px}
+.aster-week-calendar{display:grid;grid-template-columns:repeat(5,minmax(190px,1fr));min-width:950px;align-items:stretch}
+.aster-calendar-day{min-width:0;border-right:1px solid var(--aster-line);background:var(--aster-surface);display:flex;flex-direction:column;min-height:440px}
+.aster-calendar-day:last-child{border-right:0}
+.aster-column-heading{padding:19px 17px 17px;background:var(--aster-surface-muted);border-bottom:1px solid var(--aster-line);min-height:95px}
+.aster-column-heading>span{display:flex;align-items:center;gap:9px;color:var(--aster-text-muted);text-transform:uppercase;font-size:12px;letter-spacing:1px}
+.aster-column-heading>span>b{font-size:12px;font-weight:500;letter-spacing:.6px;color:var(--aster-on-brand);background:var(--aster-brand);border-radius:4px;padding:2px 5px}
+.aster-column-heading>div{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:6px}
+.aster-column-heading strong{font-size:28px;font-weight:500;line-height:1.3;color:var(--aster-ink)}
+.aster-column-heading small{font-size:12px;color:var(--aster-text-muted)}
+.aster-calendar-day.is-today .aster-column-heading{background:var(--aster-brand-soft);box-shadow:inset 0 3px var(--aster-brand)}
+.aster-column-appointments{padding:12px;display:flex;flex-direction:column;gap:12px;flex:1}
+.aster-week-visit{background:var(--aster-surface-muted);border:1px solid var(--aster-line);border-left:3px solid var(--aster-brand);border-radius:7px;padding:14px 12px}
+.aster-app .provider-ellis{--aster-provider:var(--aster-ellis);--aster-provider-soft:var(--aster-ellis-soft)}
+.aster-app .provider-lee{--aster-provider:var(--aster-lee);--aster-provider-soft:var(--aster-lee-soft)}
+.aster-app .provider-blake{--aster-provider:var(--aster-blake);--aster-provider-soft:var(--aster-blake-soft)}
+.aster-week-visit[class*=provider-]{background:var(--aster-provider-soft);border-color:color-mix(in srgb,var(--aster-provider) 35%,var(--aster-surface));border-left-color:var(--aster-provider)}
+.aster-provider-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--aster-provider);margin-right:6px;flex-shrink:0}
+.aster-week-visit-time{display:flex;align-items:center;justify-content:space-between;gap:7px;flex-wrap:wrap}
+.aster-week-visit-time strong{font-size:14px;font-weight:600;color:var(--aster-ink);line-height:1.5}
+.aster-week-visit-time span{font-size:12px;color:var(--aster-text-muted)}
+.aster-week-visit h3{font-size:16px;line-height:1.5;font-weight:600;color:var(--aster-ink);margin:16px 0 5px;overflow-wrap:anywhere}
+.aster-week-provider{display:flex;align-items:center;font-size:12px;line-height:1.7;color:var(--aster-text-muted)}
+.aster-week-visit>p{font-size:13px;line-height:1.8;color:var(--aster-text-muted);margin:13px 0 15px}
+.aster-week-visit .aster-status-pill{font-size:12px}
+.aster-week-visit-actions{display:flex;justify-content:space-between;gap:5px;margin-top:12px;border-top:1px solid var(--aster-line);padding-top:8px}
+.aster-week-visit-actions button{border:0;background:none;color:var(--aster-text-muted);font-size:12px;padding:6px 2px;min-height:36px}
+.aster-week-visit-actions .is-remind{color:var(--aster-brand);font-weight:500}
+.aster-week-visit-actions .is-cancel{color:var(--aster-danger)}
+.aster-week-visit-actions button:hover{text-decoration:underline;text-underline-offset:3px}
+.aster-app .aster-week-visit.is-canceled{background:var(--aster-surface-muted);border-color:var(--aster-line);border-left-color:var(--aster-line-strong)}
+.aster-week-visit.is-canceled h3,.aster-week-visit.is-canceled .aster-week-visit-time strong{color:var(--aster-text-muted)}
+.aster-week-visit.is-canceled h3{text-decoration:line-through}
+.aster-column-empty{padding:45px 10px;text-align:center;color:var(--aster-text-muted);font-size:13px;line-height:1.8}
+.aster-column-empty>span{font-size:30px;color:var(--aster-decor);display:block;margin-bottom:13px}
+.aster-add-day{margin:10px 12px 15px;padding:10px 7px;border:1px dashed var(--aster-line-strong);background:var(--aster-surface);color:var(--aster-brand);font-weight:500;font-size:12px;border-radius:6px;min-height:43px}
+.aster-add-day:hover:not(:disabled){background:var(--aster-surface-muted)}
+.aster-app .aster-week-provider,.aster-app .aster-week-visit>p{color:var(--aster-text-muted)}
+.aster-app .aster-column-heading small{color:var(--aster-text-muted)}
+@media(max-width:1100px){
+ .aster-appbar{gap:20px;flex-wrap:wrap}
+ .aster-appbar-actions>span{display:none}
+ .aster-appbar .aster-navigation button{padding:11px 14px}
+ .aster-appbar .aster-brand small{font-size:12px}
+ .aster-app .aster-main{padding-top:28px}
+}
+@media(max-width:760px){
+ .aster-appbar{padding:20px 18px;gap:20px}
+ .aster-appbar .aster-brand{order:0}
+ .aster-appbar-actions{order:1;margin-left:auto}
+ .aster-appbar-actions button{font-size:12px;padding:9px 12px}
+ .aster-appbar .aster-navigation{order:2;width:100%;gap:7px}
+ .aster-appbar .aster-navigation button{flex:1;justify-content:center;font-size:13px;padding:11px 8px}
+ .aster-appbar .aster-navigation small{display:none}
+ .aster-app .aster-main{padding:25px 18px 0}
+ .aster-week-calendar{min-width:1000px;grid-template-columns:repeat(5,minmax(200px,1fr))}
+ .aster-week-scroll{border-top:1px solid var(--aster-line)}
+ .aster-column-heading{padding:18px 15px}
+ .aster-add-day{font-size:13px}
+}
+.aster-app .aster-calendar-day{min-height:300px}
+.aster-app .aster-column-heading{padding:12px 14px;min-height:76px}
+.aster-app .aster-column-heading>div{margin-top:3px}
+.aster-app .aster-column-heading strong{font-size:25px}
+.aster-app .aster-column-appointments{padding:8px;gap:8px}
+.aster-app .aster-week-visit{padding:10px 11px;border-radius:6px}
+.aster-app .aster-week-visit h3{margin:6px 0 1px;line-height:1.35}
+.aster-app .aster-week-provider{line-height:1.4}
+.aster-app .aster-week-visit>p{margin:5px 0 6px;line-height:1.45}
+.aster-app .aster-week-visit-actions{margin-top:4px;padding-top:0;border-top:0;gap:8px}
+.aster-app .aster-week-visit-actions button{padding:4px 6px;min-height:32px;line-height:1.4}
+.aster-app .aster-column-empty{padding:22px 8px}
+.aster-app .aster-column-empty>span{margin-bottom:6px;font-size:26px}
+.aster-app .aster-add-day{margin:6px 8px 10px;padding:8px 5px;min-height:36px}
+/* Today stands out with a solid date badge; past days recede but stay readable. */
+.aster-column-heading>span>em{font-style:normal;font-size:12px;letter-spacing:.6px;color:var(--aster-text-muted);border:1px solid var(--aster-line-strong);border-radius:4px;padding:0 5px}
+/* Every day gets the same number box and label-row height, so today's badge can't shift the header. */
+.aster-app .aster-column-heading>span{min-height:20px}
+.aster-app .aster-column-heading>span>b,.aster-app .aster-column-heading>span>em{line-height:16px;padding:1px 5px;border:1px solid transparent}
+.aster-app .aster-column-heading>span>em{border-color:var(--aster-line-strong)}
+.aster-app .aster-column-heading strong{display:inline-flex;align-items:center;justify-content:center;height:1.4em;min-width:1.4em;padding:0 .35em;margin-left:-.35em;border-radius:999px;line-height:1}
+.aster-app .aster-calendar-day.is-today .aster-column-heading strong{background:var(--aster-brand);color:var(--aster-on-brand)}
+.aster-calendar-day.is-past{background:var(--aster-past)}
+.aster-calendar-day.is-past .aster-column-heading{background:var(--aster-past)}
+.aster-calendar-day.is-past .aster-column-heading strong{color:var(--aster-text-muted)}
+.aster-column-empty p{color:var(--aster-text-muted)}
+.aster-empty-book{display:inline-flex;align-items:center;gap:6px;border:1px dashed var(--aster-line-strong);background:var(--aster-surface);color:var(--aster-brand);font-weight:500;font-size:13px;border-radius:6px;padding:8px 14px;min-height:36px}
+.aster-empty-book:hover{background:var(--aster-brand-soft);border-style:solid}
+/* Canceling asks first, inside the card. */
+.aster-week-visit-confirm{margin-top:6px;padding:8px;border-radius:6px;background:var(--aster-danger-soft);border:1px solid var(--aster-danger);font-size:13px;color:var(--aster-ink)}
+.aster-week-visit-confirm>div{display:flex;gap:6px;margin-top:6px}
+.aster-week-visit-confirm button{flex:1;min-height:32px;border-radius:5px;font-size:12px;border:1px solid var(--aster-line-strong);background:var(--aster-surface);color:var(--aster-ink)}
+.aster-week-visit-confirm button.is-danger{background:var(--aster-danger);border-color:var(--aster-danger);color:var(--aster-surface);font-weight:600}

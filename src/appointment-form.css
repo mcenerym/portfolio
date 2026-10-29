@@ -1,0 +1,80 @@
+.aster-app .aster-appointment-modal{width:min(1050px,calc(100vw - 32px));max-height:calc(100dvh - 32px);overflow:hidden;border-radius:12px}
+.aster-appointment-modal .aster-compact-booking{display:flex;flex-direction:column;max-height:calc(100dvh - 32px);overflow:hidden}
+.aster-compact-booking-heading{padding:17px 24px 15px;padding-right:75px;border-bottom:1px solid var(--aster-line);flex-shrink:0}
+.aster-app .aster-compact-booking-heading h2{font-family:Georgia,serif;font-weight:400;font-size:25px;line-height:1.3;letter-spacing:-.5px;margin:0}
+.aster-compact-booking-heading>span{font-size:12px;line-height:1.5;color:var(--aster-text-muted);display:block;margin-top:4px}
+.aster-app .aster-appointment-modal .aster-modal-close{top:14px;right:17px;width:35px;height:35px;min-width:35px;min-height:35px;padding:0;display:flex;align-items:center;justify-content:center;line-height:1}
+.aster-app .aster-modal-close svg{display:block;flex:none}
+.aster-app .aster-appointment-modal .aster-compact-booking form{display:flex;flex-direction:column;padding:0;overflow:hidden;flex:1;min-height:0}
+.aster-booking-panels{display:grid;grid-template-columns:minmax(200px,.85fr) minmax(260px,1.1fr) minmax(240px,1fr);min-height:0;overflow:auto;flex:1;padding:0 8px}
+.aster-app .aster-appointment-modal .aster-compact-booking fieldset:nth-of-type(n){float:none;grid-area:auto;margin:0;padding:20px 16px;border:0;border-right:1px solid var(--aster-line);min-height:0;min-width:0}
+.aster-app .aster-appointment-modal .aster-compact-booking fieldset:last-child{border:0}
+.aster-app .aster-appointment-modal .aster-compact-booking legend{font-size:14px;line-height:1.5;margin:0 0 13px;padding:0;float:left;width:100%;display:flex;align-items:center;gap:8px}
+.aster-app .aster-compact-booking legend+*{clear:both}
+.aster-app .aster-appointment-modal .aster-compact-booking legend>b{font-size:12px;width:21px;height:21px}
+.aster-app .aster-compact-booking input:not([type=checkbox]),.aster-app .aster-compact-booking select{font-size:14px;min-height:38px;border-radius:6px;padding:8px 9px}
+.aster-app .aster-appointment-modal .aster-compact-booking fieldset>label:not(.aster-sr-only){font-size:12px;line-height:1.5;margin:12px 0 5px}
+.aster-app .aster-appointment-modal .aster-compact-booking fieldset>legend+label:not(.aster-sr-only){margin-top:0}
+.aster-app .aster-compact-booking .aster-procedure-list{gap:6px;clear:both}
+.aster-app .aster-compact-booking .aster-procedure-list label{padding:9px;min-height:38px;gap:8px;border-radius:5px}
+.aster-app .aster-appointment-modal .aster-compact-booking .aster-procedure-list label>span{font-size:13px;line-height:1.5}
+.aster-app .aster-appointment-modal .aster-compact-booking .aster-procedure-list label>b{font-size:12px}
+.aster-app .aster-compact-booking .aster-duration{font-size:12px;padding:9px;margin-top:10px}
+.aster-booking-hint{font-size:12px;line-height:1.6;color:var(--aster-text-muted);margin:8px 0 0}
+.aster-booking-selection{display:flex;flex-direction:column;gap:3px;border-top:1px solid var(--aster-line);margin-top:16px;padding-top:12px}
+.aster-booking-selection>span{font-size:13px;color:var(--aster-text-muted)}
+.aster-booking-selection>strong{font-size:12px;font-weight:400;color:var(--aster-text-muted)}
+.aster-booking-footer{border-top:1px solid var(--aster-line);background:var(--aster-surface);padding:12px 22px;flex-shrink:0}
+.aster-booking-footer-controls{display:flex;align-items:center;justify-content:flex-end;gap:10px;flex-wrap:wrap}
+.aster-booking-footer-controls>span{font-size:12px;line-height:1.5;color:var(--aster-text-muted);margin-right:auto}
+.aster-app .aster-appointment-modal .aster-compact-booking .aster-booking-footer button{min-height:39px;font-size:13px;min-width:0;width:auto;padding:9px 13px;border-radius:6px;flex:none}
+.aster-booking-footer .aster-form-error{margin:0 0 10px;padding:8px 11px;font-size:12px;line-height:1.6}
+.aster-booking-steps,.aster-app .aster-booking-footer .aster-booking-next,.aster-app .aster-booking-footer .aster-booking-back{display:none}
+@media(max-width:850px){
+ .aster-app .aster-appointment-modal{width:min(540px,calc(100vw - 20px));max-height:calc(100dvh - 24px)}
+ .aster-appointment-modal .aster-compact-booking{max-height:calc(100dvh - 24px)}
+ .aster-compact-booking-heading{padding:15px 18px;padding-right:65px}
+ .aster-app .aster-compact-booking-heading h2{font-size:21px}
+ .aster-compact-booking-heading>span{font-size:12px}
+ .aster-booking-steps{display:flex;gap:6px;padding:10px 15px;border-bottom:1px solid var(--aster-line);flex-shrink:0}
+ .aster-booking-steps button{flex:1;display:flex;gap:7px;align-items:center;justify-content:center;border:1px solid var(--aster-line);background:var(--aster-surface);color:var(--aster-text-muted);border-radius:5px;min-height:36px;font-size:12px;padding:7px 5px}
+ .aster-booking-steps button>b{font-size:12px;font-weight:400;background:var(--aster-brand-soft);border-radius:50%;width:17px;height:17px;display:grid;place-items:center}
+ .aster-booking-steps button[aria-pressed=true]{background:var(--aster-brand-soft);border-color:var(--aster-line-strong);color:var(--aster-text-muted)}
+ .aster-booking-panels{display:block;overflow:auto;padding:0;min-height:0}
+ .aster-app .aster-appointment-modal .aster-compact-booking fieldset:nth-of-type(n){padding:15px 18px;border:0}
+ .aster-app .aster-compact-booking fieldset[data-active=false]{display:none}
+ .aster-app .aster-appointment-modal .aster-compact-booking legend{font-size:14px;margin-bottom:12px}
+ .aster-app .aster-compact-booking input:not([type=checkbox]),.aster-app .aster-compact-booking select{font-size:16px;min-height:40px}
+ .aster-app .aster-appointment-modal .aster-compact-booking .aster-procedure-list label{padding:10px;min-height:42px}
+ .aster-app .aster-appointment-modal .aster-compact-booking .aster-procedure-list label>span{font-size:14px}
+ .aster-booking-footer{padding:10px 15px}
+ .aster-booking-footer-controls{gap:8px}
+ .aster-booking-footer-controls>span{width:100%;flex-basis:100%;font-size:12px}
+ .aster-app .aster-appointment-modal .aster-compact-booking .aster-booking-footer button{font-size:13px;min-height:40px;padding:8px 12px}
+ .aster-app .aster-booking-footer .aster-booking-next,.aster-app .aster-booking-footer .aster-booking-back{display:inline-block}
+ .aster-app .aster-booking-footer .aster-booking-submit{display:none}
+ .aster-app .aster-booking-footer .aster-booking-submit.is-final-step{display:inline-block}
+ .aster-booking-footer-controls>button:nth-of-type(1){margin-right:auto}
+}
+@media(max-height:550px) and (min-width:851px){
+ .aster-app .aster-compact-booking fieldset:nth-of-type(n){padding:12px}
+ .aster-app .aster-compact-booking .aster-procedure-list label{padding:6px 8px;min-height:32px}
+ .aster-compact-booking-heading{padding-top:12px;padding-bottom:12px}
+}
+.aster-availability-shortcuts{clear:both;display:flex;flex-direction:column;gap:6px;margin-bottom:10px}
+.aster-availability-shortcuts button{display:flex;align-items:center;justify-content:space-between;gap:8px;border:1px solid var(--aster-line-strong);border-radius:5px;background:var(--aster-surface-muted);color:var(--aster-text-muted);font-size:12px;line-height:1.5;padding:7px 9px;min-height:34px;text-align:left}
+.aster-availability-shortcuts button:first-child{background:var(--aster-brand-soft);border-color:var(--aster-line-strong);color:var(--aster-brand)}
+.aster-availability-shortcuts button:hover:not(:disabled){background:var(--aster-line)}
+.aster-availability-shortcuts button>span{flex-shrink:0}
+.aster-availability-shortcuts small{font-size:12px;line-height:1.5;color:var(--aster-text-muted)}
+@media(max-width:850px){
+ .aster-availability-shortcuts button{font-size:13px;min-height:39px}
+ .aster-availability-shortcuts small{font-size:12px}
+}
+.aster-app .aster-compact-booking .aster-availability-feedback{display:block;box-sizing:border-box;height:2.8em;min-height:2.8em;max-height:2.8em;font-size:12px;line-height:1.4;color:var(--aster-text-muted);margin:0 0 8px;overflow:auto;overflow-wrap:anywhere;scrollbar-gutter:stable}
+.aster-app .aster-compact-booking .aster-availability-feedback:empty{visibility:hidden}
+.aster-app .aster-compact-booking .aster-booking-panels{scrollbar-gutter:stable}
+.aster-app .aster-compact-booking select{width:100%;min-width:0;max-width:100%}
+@media(max-width:850px){
+ .aster-app .aster-compact-booking .aster-availability-feedback{height:4.2em;min-height:4.2em;max-height:4.2em;font-size:12px}
+}

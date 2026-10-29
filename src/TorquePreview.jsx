@@ -1,0 +1,6 @@
+import React from 'react';
+
+export default function TorquePreview(){return <div className="torque-preview-window">
+ <div className="torque-preview-sidebar"><span className="torque-preview-logo"><svg width="23" height="23" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.6"><circle cx="16" cy="16" r="12"/><circle cx="16" cy="16" r="7"/><circle cx="16" cy="16" r="2"/><path d="M16 9v5m7 2h-5m-2 7v-5m-7-2h5"/></svg></span><b>TORQUE</b><span className="torque-preview-sidebar-line active"/><span className="torque-preview-sidebar-line"/><span className="torque-preview-sidebar-line"/><span className="torque-preview-sidebar-wheel">⚙</span></div>
+ <div className="torque-preview-main"><div className="torque-preview-topline"><span>GARAGE / SERVICE & SUPPLY</span><i/></div><strong>Your next tune-up.</strong><div className="torque-preview-vehicle">◉ <span>Sedan / compact</span><span>⌄</span></div><div className="torque-preview-catalog"><div className="torque-preview-products"><span className="torque-preview-tab">Parts & services</span><div><article><span>◉</span><b>Oil change</b><i/></article><article><span>⚙</span><b>Brake service</b><i/></article></div></div><div className="torque-preview-estimate"><span>MY ESTIMATE</span><i/><i/><strong>Compare<br/>local shops →</strong></div></div></div>
+ </div>}

@@ -1,0 +1,50 @@
+/* Give the larger type room to breathe at every viewport size. */
+.theme-site{line-height:1.6}
+.theme-site .hero-copy>p{font-size:20px;line-height:1.75;max-width:720px}
+.theme-site .service p,.theme-site .about-story p,.theme-site .steps p,.theme-site .section-heading>p,.theme-site .technical-background dd,.theme-site .ai-intro p,.theme-site .ai-intro p.muted{line-height:1.8}
+.theme-site .technical-background h3{font-size:20px}
+.theme-site .technical-background dt,.theme-site .ai-focus strong{font-size:16px}
+.theme-site .ai-focus span{font-size:16px;line-height:1.8}
+.theme-site .steps h3{font-size:21px;line-height:1.4}
+.theme-site .service h3{line-height:1.4}
+.theme-site .service h4{line-height:1.6}
+.theme-site .section-heading>p{max-width:430px}
+.theme-site .steps p{max-width:unset}
+.theme-site .eyebrow{flex-wrap:wrap;line-height:1.7}
+.theme-site .email-row{flex-wrap:wrap;gap:8px 16px}
+.theme-site .email-row button{min-height:44px;padding:8px}
+.theme-site .copy-status{height:auto;min-height:22px}
+.theme-site footer{flex-wrap:wrap;line-height:1.7}
+.theme-site header{position:relative}
+.theme-site .wordmark{flex-shrink:0;gap:28px}
+.theme-site .wordmark>span:last-child{display:flex;align-items:center;gap:14px}
+.theme-site .wordmark-sub{margin-top:0;padding-left:14px;border-left:1px solid var(--line);line-height:1.5}
+.theme-site .button,.theme-site .nav-contact{line-height:1.5;min-height:48px}
+@media(min-width:761px) and (max-width:1050px){
+ [data-theme=blueprint] .service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .theme-site .ai-section{grid-template-columns:1fr;gap:35px}
+}
+@media(max-width:1180px){
+ .theme-site .menu-toggle{display:flex;align-items:center;gap:10px;border:0;background:transparent;font-size:16px;min-height:44px;color:var(--ink)}
+ .theme-site header nav{display:none;position:absolute;top:100%;left:0;right:0;z-index:10;background:var(--page);padding:25px 6%;border-bottom:1px solid var(--line);align-items:stretch;gap:22px;font-size:16px}
+ .theme-site header nav.open{display:flex;flex-direction:column}
+ .theme-site header nav a{padding-block:8px}
+}
+@media(max-width:600px){
+ .theme-site header{flex-wrap:wrap;gap:8px}
+ .theme-site .wordmark{width:100%;flex-shrink:1}
+ .theme-site .wordmark>span:last-child{gap:10px}
+ .theme-site .wordmark-sub{padding-left:10px;max-width:145px}
+ .theme-site .menu-toggle{margin-left:auto}
+}
+@media(max-width:760px){
+ .theme-site .hero-copy>p{font-size:18px}
+ .theme-site .hero-actions{flex-wrap:wrap;gap:20px;justify-content:center}
+ .theme-site .wordmark{font-size:17px;gap:22px}
+ .theme-site .wordmark-sub{font-size:12px;letter-spacing:1px}
+ .theme-site .contact h2{font-size:48px}
+ .theme-site .contact-row>div{min-width:0}
+ .theme-site .email-row>a{overflow-wrap:anywhere}
+ .theme-site footer{display:flex;align-items:start;gap:22px 30px}
+ .theme-site footer>span,.theme-site footer small{text-align:left}
+}

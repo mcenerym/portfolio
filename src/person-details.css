@@ -1,0 +1,99 @@
+.aster-people-detail-layout{display:grid;grid-template-columns:minmax(280px,.8fr) minmax(360px,1.2fr);flex:1;min-height:0;overflow:hidden}
+.aster-people-detail-layout>.aster-people-scroll{border-right:1px solid var(--aster-line)}
+.aster-people-workspace .aster-people-table{min-width:0}
+.aster-people-workspace .aster-people-table thead th{padding:9px 14px}
+.aster-people-workspace .aster-people-table td,.aster-people-workspace .aster-people-table tbody th{padding:9px 13px}
+.aster-people-workspace .aster-people-table td:last-child{width:95px}
+.aster-person-row-button{display:flex;gap:10px;align-items:center;text-align:left;padding:0;background:none;border:0;color:var(--aster-text-muted);min-height:39px;width:100%}
+.aster-person-row-button strong{font-size:14px;font-weight:500;line-height:1.5;display:block}
+.aster-person-row-button small{font-size:12px;line-height:1.5;color:var(--aster-text-muted);display:block}
+.aster-person-row-button .aster-avatar{width:30px;height:30px;font-size:12px}
+.aster-person-row-details{font-size:12px;color:var(--aster-text-muted);min-height:34px;padding:5px 0;border:0;background:none;white-space:nowrap}
+.aster-person-row-details:hover{text-decoration:underline;text-underline-offset:3px}
+.aster-person-row-selected{background:var(--aster-brand-soft)}
+.aster-person-detail{display:flex;flex-direction:column;min-height:0;min-width:0;background:var(--aster-surface);overflow:hidden}
+.aster-person-detail-heading{padding:15px 18px 13px;flex-shrink:0;border-bottom:1px solid var(--aster-line)}
+.aster-person-detail-heading>div{display:flex;align-items:center;gap:11px}
+.aster-person-detail-heading>div>div{min-width:0}
+.aster-person-detail-heading>div>div>span{font-size:12px;letter-spacing:.6px;color:var(--aster-text-muted);line-height:1.6}
+.aster-app .aster-person-detail-heading h2{font-family:Georgia,serif;font-weight:400;font-size:22px;letter-spacing:-.5px;line-height:1.4;margin:2px 0 0;color:var(--aster-brand)}
+.aster-person-detail-heading .aster-secondary-button{margin-left:auto;white-space:nowrap;font-size:12px;padding:7px 10px;min-height:35px;border-radius:6px}
+.aster-person-detail-tabs{display:flex;gap:6px;border-bottom:1px solid var(--aster-line);background:var(--aster-surface-muted);padding:8px 16px;flex-shrink:0}
+.aster-person-detail-tabs button{font-size:12px;min-height:34px;padding:6px 11px;border:1px solid transparent;border-radius:5px;background:transparent;color:var(--aster-text-muted);line-height:1.5}
+.aster-person-detail-tabs button[aria-pressed=true]{background:var(--aster-brand-soft);border-color:var(--aster-line-strong);color:var(--aster-text-muted)}
+.aster-person-detail-scroll,.aster-person-notes-scroll{flex:1;min-height:0;overflow:auto;padding:17px 18px;scrollbar-gutter:stable}
+.aster-person-detail-scroll:focus-visible,.aster-person-notes-scroll:focus-visible{outline:2px solid var(--aster-focus);outline-offset:-3px}
+.aster-contact-details h3,.aster-history-intro h3{font-size:15px;font-weight:500;color:var(--aster-text-muted);margin:0 0 16px}
+.aster-contact-details dl{display:grid;grid-template-columns:1fr 1fr;gap:17px 24px;margin:0}
+.aster-contact-details dt{font-size:12px;color:var(--aster-text-muted);margin-bottom:5px}
+.aster-contact-details dd{font-size:14px;line-height:1.7;color:var(--aster-text-muted);margin:0;overflow-wrap:anywhere}
+.aster-contact-details>p{font-size:12px;color:var(--aster-text-muted);line-height:1.8;margin-top:26px;border-top:1px solid var(--aster-line);padding-top:15px}
+.aster-history-intro{margin-bottom:17px}
+.aster-history-intro h3{margin-bottom:5px}
+.aster-history-intro>span{font-size:12px;color:var(--aster-text-muted);line-height:1.6;display:block}
+.aster-person-appointment{border:1px solid var(--aster-line);background:var(--aster-surface-muted);border-radius:7px;padding:12px 13px;margin-bottom:10px}
+.aster-person-appointment>div{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}
+.aster-person-appointment strong{font-size:12px;font-weight:500;color:var(--aster-text-muted)}
+.aster-person-appointment h4{font-size:14px;font-weight:500;line-height:1.6;color:var(--aster-text-muted);margin:8px 0 4px}
+.aster-person-appointment p{font-size:12px;color:var(--aster-text-muted);line-height:1.7}
+.aster-person-appointment .aster-status-pill{font-size:12px}
+.aster-detail-empty{text-align:center;padding:26px 10px;color:var(--aster-text-muted)}
+.aster-detail-empty h3{font-size:17px;font-weight:500;line-height:1.5;margin:0}
+.aster-detail-empty p{font-size:13px;line-height:1.8;margin:12px 0 18px}
+.aster-detail-empty .aster-secondary-button{font-size:13px;padding:8px 12px;min-height:38px}
+.aster-person-notes{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden}
+.aster-person-note-form{padding:14px 18px;border-bottom:1px solid var(--aster-line);background:var(--aster-surface-muted);flex-shrink:0}
+.aster-person-note-form>label{font-size:13px;color:var(--aster-text-muted);display:block;margin-bottom:8px}
+.aster-app .aster-person-note-form textarea{display:block;font:inherit;font-size:14px;line-height:1.6;background:var(--aster-surface);color:var(--aster-text-muted);border:1px solid var(--aster-line-strong);width:100%;height:80px;border-radius:6px;padding:10px;resize:none}
+.aster-person-note-form textarea:focus-visible{outline:2px solid var(--aster-focus);outline-offset:3px}
+.aster-person-note-form>div{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-top:9px}
+.aster-person-note-form>div>span{font-size:12px;color:var(--aster-text-muted)}
+.aster-person-note-form .aster-primary-button{min-height:35px;font-size:12px;padding:7px 12px;border-radius:6px}
+.aster-person-note-form>p{font-size:12px;color:var(--aster-text-muted);line-height:1.7;margin-top:8px}
+.aster-person-note-form .aster-note-limit{color:var(--aster-danger);font-size:12px}
+.aster-person-notes-scroll{padding-top:13px}
+.aster-person-note{padding:11px 0;border-bottom:1px solid var(--aster-line)}
+.aster-person-note:first-child{padding-top:0}
+.aster-person-note:last-child{border:0}
+.aster-person-note time{font-size:12px;color:var(--aster-text-muted);display:block;margin-bottom:6px}
+.aster-person-note p{font-size:14px;line-height:1.8;color:var(--aster-text-muted);white-space:pre-wrap;overflow-wrap:anywhere}
+.aster-back-to-directory{display:none}
+@media(max-width:1050px){
+ .aster-people-detail-layout{grid-template-columns:minmax(240px,.8fr) minmax(340px,1.2fr)}
+ .aster-people-workspace .aster-people-table td,.aster-people-workspace .aster-people-table tbody th{padding:9px 11px}
+ .aster-person-row-button{gap:8px}
+ .aster-person-row-button .aster-avatar{display:none}
+ .aster-person-detail-heading{padding:13px 15px}
+ .aster-app .aster-person-detail-heading h2{font-size:18px}
+ .aster-person-detail-heading .aster-avatar{width:30px;height:30px;font-size:12px}
+ .aster-contact-details dl{grid-template-columns:1fr;gap:15px}
+}
+@media(max-width:760px){
+ .aster-people-detail-layout{display:block;position:relative;min-height:0;flex:1}
+ .aster-people-detail-layout>.aster-people-scroll,.aster-person-detail{position:absolute;inset:0}
+ .aster-people-detail-layout[data-mobile-pane=directory]>.aster-person-detail{display:none}
+ .aster-people-detail-layout[data-mobile-pane=details]>.aster-people-scroll{display:none}
+ .aster-people-workspace .aster-people-table{width:100%;min-width:0}
+ .aster-person-row-button .aster-avatar{display:grid}
+ .aster-person-row-button strong{font-size:15px}
+ .aster-person-row-button small{font-size:12px}
+ .aster-people-workspace .aster-people-table td,.aster-people-workspace .aster-people-table tbody th{padding:10px 13px}
+ .aster-person-row-details{font-size:13px;min-height:40px}
+ .aster-back-to-directory{display:block;border:0;background:none;padding:0 0 10px;font-size:12px;color:var(--aster-text-muted);min-height:30px}
+ .aster-person-detail-heading{padding:12px 15px}
+ .aster-app .aster-person-detail-heading h2{font-size:20px}
+ .aster-person-detail-heading .aster-secondary-button{font-size:12px;padding:7px 9px}
+ .aster-person-detail-heading>div>div>span{font-size:12px}
+ .aster-person-detail-tabs{padding:7px 13px;gap:5px}
+ .aster-person-detail-tabs button{flex:1;padding:7px;font-size:12px;min-height:37px}
+ .aster-person-detail-scroll,.aster-person-notes-scroll{padding:15px}
+ .aster-contact-details dl{grid-template-columns:1fr;gap:16px}
+ .aster-contact-details dd{font-size:15px}
+ .aster-person-note-form{padding:12px 15px}
+ .aster-person-note-form>label{font-size:13px}
+ .aster-person-note-form>div>span{font-size:12px}
+ .aster-person-note-form .aster-primary-button{min-height:37px}
+ .aster-person-note p{font-size:14px}
+ .aster-person-appointment h4{font-size:14px}
+ .aster-person-appointment strong{font-size:12px}
+}
