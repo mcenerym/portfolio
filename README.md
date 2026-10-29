@@ -13,6 +13,10 @@ npm run check    # every check in scripts/
 
 Everything runs in the browser. Contact links use `mike.mcenery1@gmail.com` and LinkedIn (`https://www.linkedin.com/in/mike-mcenery-3710ba19a/`). The example apps use fictional data and save changes only in browser local storage.
 
+## Deploy
+
+The site is a Cloudflare Worker with static assets (`wrangler.jsonc`, Worker `mike-portfolio`), served at https://mike.mcenery.dev. Cloudflare builds every push to `main` with `npm run build` and deploys it with `npx wrangler deploy`, so run `npm run build` and `npm run check` before pushing. Node is pinned in `.node-version`.
+
 ## Main site
 
 - **Content:** `src/main.jsx` (services, sections, copy). Sections: Services (01), Interactive examples (02, `#examples`), AI (03), About (04), Approach (05), Contact.
